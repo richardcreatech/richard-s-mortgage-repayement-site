@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  cursor: crosshair;
+}
+
+body {
+  background-color: rgb(212, 240, 251);
+  width: 100%;
+  height: 100%;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.clearAll:hover {
+  text-decoration: underline;
+}
+
+section {
+  box-shadow: 0 0 15px rgba(128, 128, 128, 0.573);
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+}
+
+section:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom-left-radius: 20px;
+}
+
+.easier {
+  border-radius: 0.7em;
+  padding: 20px;
+  justify-content: center;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.easier h1 {
+  font-family: sans-serif;
+}
+
+.easier .divide {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  border: rgb(1, 65, 65) solid 0.2px;
+}
+
+.easier .divide p {
+  font-size: 13px;
+}
+
+.easier form {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.long {
+  border: 0.3px solid;
+  width: 300px;
+  height: 30px;
+}
+
+.easier {
+  font-family: sans-serif;
+  color: rgb(1, 65, 65);
+}
+
+.easier form {
+  font-size: 10px;
+}
+
+section:nth-of-type(1) {
+  background-color: #fff;
+}
+
+section:nth-of-type(2) {
+  color: white;
+  background-color: rgb(0, 44, 54);
+}
+
+.shortStuff {
+  display: flex;
+  gap: 20px;
+}
+
+.boxedin .short {
+  width: 170px;
+  height: 35px;
+}
+
+.selection {
+  display: flex;
+  flex-direction: column;
+}
+
+.selection .radio {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.radio .rad {
+  border: solid 0.2px;
+  width: 300px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.radio {
+  font-weight: bolder;
+  font-size: 13px;
+  display: flex;
+  gap: 10px;
+}
+
+input[value="Calculate Repayment"] {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 5px;
+  border: none;
+  background-color: rgb(233, 233, 10);
+  border-radius: 25px;
+  font-weight: bolder;
+  color: rgb(1, 65, 65);
+}
+
+.secondSection {
+  font-family: sans-serif;
+}
+
+@media (max-width: 1000px) {
+  maIN {
+    flex-direction: column;
+  }
+}
+
+.completiontext {
+  font-weight: lighter;
+}
+
+.calculatorpic {
+  width: 100px;
+  height: 150px;
+}
+
+.secondSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.secondSection .completiontext {
+  text-align: center;
+  font-size: 10px;
+}
+
+.resultsShowhere {
+  font-size: 20px;
+}
+
+.leftSecond {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.finalresult {
+  border-top: rgb(233, 233, 10) solid;
+  background-color: rgb(0, 23, 28);
+  width: 200px;
+  height: 120px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+  padding: 9px;
+}
+hr {
+  opacity: 0.1;
+  width: 100%;
+}
+.monthlyRepaymentsText {
+  color: rgb(233, 233, 10);
+  filter: drop-shadow(0 0 15px rgb(233, 233, 10));
+}
+
+.load {
+  border-top: solid 0.5em rgb(233, 233, 10);
+  border-left: solid rgb(233, 233, 10);
+  border-right: none;
+  width: 200px;
+  height: 200px;
+  border-radius: 100rem;
+  box-shadow: 0 0 40px rgb(233, 233, 10);
+  animation: rotate 0.3s linear infinite;
+}
+
+.leftSecond {
+  animation: fade 0.25s ease-in-out;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.gitlink {
+  top: 20px;
+  left: 40px;
+  position: fixed;
+  font-size: 40px;
+  color: hsla(0, 0%, 0%, 0.378);
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.gitlink:hover {
+  text-decoration: underline;
+}

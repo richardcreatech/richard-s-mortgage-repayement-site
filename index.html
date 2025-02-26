@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage repayment calculator</title>
+</head>
+<body>
+    <a class="gitlink" href="">
+        <i class="fa-brands fa-github-alt"></i> GitHub
+    </a>
+    <main>
+
+
+        <section class="easier">
+            <div class="divide">
+                <h1 class="title">Mortgage Calculator</h1>
+                <p class="clearAll">Clear All</p>
+            </div>
+
+            <form name="myForm" action="#">
+                <label>Mortgage Amount<br>
+                <input name="mortgageAmount" type="text" id="mortgageAmount" class="long"></label>
+
+                <div class="shortStuff">
+                    <div class="boxedin">
+                        <label>Mortgage Term</label><br>
+                        <input name="loanTerm" type="text" id="loanTerm" class="short">
+                    </div>
+
+                    <div class="boxedin">
+                        <label>Interest Rate</label><br>
+                        <input name="interestRate" type="text" id="interestRate"  class="short">
+                    </div>
+                </div>
+
+                <div class="selection">
+                    <label for="">Mortgage Type</label><br>
+                    <div class="radio">
+                            <label class="rad"><input name="payementType" type="radio" class="select">  Repayment</label>
+                          <label class="rad"><input name="payementType" type="radio" class="select"> Interest Only</label>
+                    </div>
+                </div>
+
+                <input type="submit" id="submit" value="Calculate Repayment">
+            </form>
+        </section>
+
+        <section class="secondSection">
+            <img class="calculatorpic" src="calculator.jpeg" alt="A picture of a calculator">
+            <h1 class="resultsShowhere">Results shown here</h1>
+            <p class="completiontext">
+                Complete the form and click "calculate repayments" to see what your monthly repayments would be
+            </p>
+        </section>
+
+    </main>
+</body>
+<script src="https://kit.fontawesome.com/65d66cd159.js" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</html>
