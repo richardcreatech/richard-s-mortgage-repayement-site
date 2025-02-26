@@ -38,6 +38,7 @@ const finalMortgagePayment = () => {
   return multiplyByMortgageAmount.toFixed(4);
 };
 
+/*
 document.addEventListener("keypress", (e) => {
   if ((e.key = "Enter")) {
     const myFormLoanTerm = document.forms["myForm"]["loanTerm"].value.trim();
@@ -67,6 +68,8 @@ document.addEventListener("keypress", (e) => {
     return;
   }
 });
+*/
+
 
 submit.onclick = function (event) {
   event.preventDefault();
